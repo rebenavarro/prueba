@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Examen práctico UF1305</title>
+	<script type="text/javascript" src="js/codigo.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div id="main">
+
+<button id="button_fecha" class="button" value="ver fecha" onclick="verfecha()">VER FECHA Y HORA</button>
+<div id="ver_mensaje"></div>
+
+<button id="button_fecha" class="button" value="ocultar fecha" onclick="ocultarfecha()">OCULTAR FECHA Y HORA</button>
+<div id="ocultar"></div>
+
+</div>
+<div id="explicacion">
+	<br>
+	<h1>ERRORES</h1>
+	<br>
+	<p>La fecha y hora no se veían porque habian varios códigos mal escritos:</p>
+	<br>
+	<ul>
+		<h1><em>Javascript</em></h1>
+		<li>La variable día no aparecía al final del document.getElementById como debería</li>
+		<li>En Javascript aparecía escrito verfecha</li>
+		<br>
+		<h1><em>HTML</em></h1>
+		<li>En el HTML aparecia verFecha por lo tanto no se reconocía</li>
+	</ul>
+	<br>
+</div>
+<br>
+<div id="datos">
+	<h1>DATOS</h1>
+	<br>
+	<form id="form1" onsubmit="return validar(this)">
+<p><label for="nombre">Nombre</label>
+<input type="text" id="nombre" name="nombre" /><br><span id="nombreError"></span></p><br>
+<p><label for="edad">Edad</label>
+<input type="text" id="edad" name="edad"/><br><span id="edadError"></span></p><br>
+<p><label for="futuro">Año</label>
+<input class="text" type="date" id="futuro" name="futuro"/><br><span id="futuroError"></span></p><br>
+
+<br>
+<button id="calcular" onclick="calculo()">Calcular</button>
+<div id="resultado"></div>
+</div>
+</form>
+</div>
+<br>
+
+</body>
+</html>

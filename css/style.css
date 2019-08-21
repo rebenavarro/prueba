@@ -1,0 +1,64 @@
+* {
+	margin:0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+	width: 80%;
+	margin:20px auto;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.button {
+	padding:10px;
+	margin:5px;
+	border-radius: 3px;
+	width: 20%;
+}
+
+#ocultar {
+	display: none;
+	margin:15px;
+	padding:20px;
+	width: 40%;
+	text-align: center;
+	border: 5px solid beige;
+	background-color: #E8DFD1;
+}
+#button_fecha{
+	background-color: #FFECE6;
+	border: 2px solid black;
+}
+#explicacion{
+	width: 70%;
+	background-color: beige;
+	margin-left: 50px;
+	margin-right: 50px;
+    padding-left: 5px;
+	border: 3px solid black;
+	padding-right: 5px;	
+}
+#datos{
+    background-color: beige;
+    margin-left: 50px;
+    width: 50%;
+	border: 3px solid black;
+	padding-right: 5px;
+	padding-left: 5px;	
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#edadError,#nombreError,#futuroError{
+	color: red;
+}
+#calcular {
+	margin-left: 20px;
+}
+
+#resultado {
+	margin-left: 20px;
+}
